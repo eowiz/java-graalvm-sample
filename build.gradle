@@ -7,6 +7,12 @@ plugins {
 group 'com.github.eowiz'
 version '1.0-SNAPSHOT'
 
+jar {
+    manifest {
+        attributes 'Main-Class': 'com.github.eowiz.Main'
+    }
+}
+
 repositories {
     mavenCentral()
 }
