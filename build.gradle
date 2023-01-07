@@ -1,11 +1,18 @@
 plugins {
     id 'java'
+    id 'application'
 
     id "io.freefair.lombok" version "6.6.1"
+
+    id 'org.graalvm.buildtools.native' version '0.9.19'
 }
 
 group 'com.github.eowiz'
 version '1.0-SNAPSHOT'
+
+application {
+    mainClass = 'com.github.eowiz.Main'
+}
 
 jar {
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
